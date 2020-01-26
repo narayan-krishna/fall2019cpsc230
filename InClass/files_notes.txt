@@ -1,0 +1,19 @@
+text files are files that contain human readable chraracters
+like alphabets, digits, symbols, etc.
+  -images, audio, etc. are usually stored ina  different file called binary files.
+
+reading and writing to files
+  -first a connection must be established between Python shell and disk (where the file resides).
+    -this is done by creating a file object, using the function open.
+    -open copies to file into buffer memory (making it faster to work upon)
+      -accessing data from the buffer memory is much faster than accessing it from the hard disk
+
+  -files can be iterated line-by-line using for statement
+    -you can perform your desired operations within.
+
+  -finally, always close the connection at the end
+
+input_file = open("newFile.txt", 'r')
+for line in input_file:
+
+input__file.close()
